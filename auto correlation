@@ -1,0 +1,6 @@
+clc; clear all;
+x=input('Enter the sequence 1: '); y=xcorr(x,x);
+subplot(2,1,1); plot2d3(x); ylabel('Amplitude->'); xlabel('n->'); title('Input sequence'); subplot(2,1,2);
+ 
+ 
+plot2d3(y); ylabel('amplitude'); xlabel('n->'); title('Output sequence'); disp('the resultant is',y);
