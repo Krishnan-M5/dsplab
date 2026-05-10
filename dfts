@@ -1,0 +1,13 @@
+include<stdio.h>#include<stdio.h > #include<math.h>#include<math.h > int N,k,n,i;int N,k,n,i; 	 float pi=3.1416,sumre=0, sumim=0,out_real[8]={0.0}, out_imag[8]={0.0};floatint x[32]; pi=3.1416,sumre=0, sumim=0,out_real[8]={0.0}, out_imag[8]={0.0}; 	 	 
+int x[32];void main( void) void main(void){ 	 
+{printf( 	"  enter the length of the sequence\n"); printf("  enter the length of the sequence      scanf(printf("%d""  enter the ,&N); 	sequence\\n"n"););        scanf("%d",&N);for(i=0;i<N;i ++) 
+      printf("  enter the sequencescanf("%d",&x[i]); \n");    forfor(i=0;i<N;i++)(k=0;k<N;k++)  
+   {scanf("%d",&x[i]); 	 
+for(k=0;k<N;k++)sumre=0; sumim=0;  	 
+{  
+sumre=0; for(n=0;n<N;n 	++) sumim=0;{ 	 
+ sumre=sumre+x[n]* cos(2*pi*k*n/N); sumim=sumim-x[n]* sin(2*pi*k*n/N); 
+for(n=0;n<N;n++)} 	 
+{out_real[k]=sumre; 	 
+sumre=sumre+x[n]* cos(2*pi*k*n/N);out_imag[k]=sumim; 	 sumim=sumimprintf("X([%d])=-x[n]* sin(2*pi*k*n/N);\t%f\t+\t%fi\n" ,k,out_real[k],out_imag[k]); 
+}}}   
